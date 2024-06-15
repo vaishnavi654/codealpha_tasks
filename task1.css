@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.gallery-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden; /* Ensure only one image is visible */
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition when navigating */
+}
+
+.gallery-image {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+}
